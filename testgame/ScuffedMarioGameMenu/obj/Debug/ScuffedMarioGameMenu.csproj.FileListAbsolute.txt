@@ -1,0 +1,10 @@
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\ScuffedMarioGameMenu\bin\Debug\ScuffedMarioGameMenu.exe.config
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\ScuffedMarioGameMenu\bin\Debug\ScuffedMarioGameMenu.exe
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\ScuffedMarioGameMenu\bin\Debug\ScuffedMarioGameMenu.pdb
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\ScuffedMarioGameMenu\obj\Debug\ScuffedMarioGameMenu.csproj.AssemblyReference.cache
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\ScuffedMarioGameMenu\obj\Debug\ScuffedMarioGameMenu.Properties.Resources.resources
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\ScuffedMarioGameMenu\obj\Debug\ScuffedMarioGameMenu.csproj.GenerateResource.cache
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\ScuffedMarioGameMenu\obj\Debug\ScuffedMarioGameMenu.csproj.CoreCompileInputs.cache
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\ScuffedMarioGameMenu\obj\Debug\ScuffedMarioGameMenu.exe
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\ScuffedMarioGameMenu\obj\Debug\ScuffedMarioGameMenu.pdb
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\ScuffedMarioGameMenu\obj\Debug\ScuffedMarioGameMenu.ScuffedMarioMenu.resources

@@ -1,0 +1,11 @@
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\testgame\obj\Debug\testgame.csproj.AssemblyReference.cache
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\testgame\obj\Debug\testgame.csproj.GenerateResource.cache
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\testgame\obj\Debug\testgame.csproj.CoreCompileInputs.cache
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\testgame\obj\Debug\testgame.testgame.resources
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\testgame\obj\Debug\testgame.Properties.Resources.resources
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\testgame\bin\Debug\testgame.exe.config
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\testgame\bin\Debug\testgame.exe
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\testgame\bin\Debug\testgame.pdb
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\testgame\obj\Debug\testgame.exe
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\testgame\obj\Debug\testgame.pdb
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\testgame\testgame\obj\Debug\testgame.MarioGameMenu.resources
