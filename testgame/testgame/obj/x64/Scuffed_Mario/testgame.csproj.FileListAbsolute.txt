@@ -1,0 +1,13 @@
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\Scuffed_Mario\testgame\testgame\bin\x64\Scuffed_Mario\testgame.exe.config
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\Scuffed_Mario\testgame\testgame\bin\x64\Scuffed_Mario\testgame.exe.manifest
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\Scuffed_Mario\testgame\testgame\bin\x64\Scuffed_Mario\testgame.application
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\Scuffed_Mario\testgame\testgame\bin\x64\Scuffed_Mario\testgame.exe
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\Scuffed_Mario\testgame\testgame\obj\x64\Scuffed_Mario\testgame.csproj.AssemblyReference.cache
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\Scuffed_Mario\testgame\testgame\obj\x64\Scuffed_Mario\testgame.MarioGameMenu.resources
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\Scuffed_Mario\testgame\testgame\obj\x64\Scuffed_Mario\testgame.testgame.resources
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\Scuffed_Mario\testgame\testgame\obj\x64\Scuffed_Mario\testgame.Properties.Resources.resources
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\Scuffed_Mario\testgame\testgame\obj\x64\Scuffed_Mario\testgame.csproj.GenerateResource.cache
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\Scuffed_Mario\testgame\testgame\obj\x64\Scuffed_Mario\testgame.csproj.CoreCompileInputs.cache
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\Scuffed_Mario\testgame\testgame\obj\x64\Scuffed_Mario\testgame.exe.manifest
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\Scuffed_Mario\testgame\testgame\obj\x64\Scuffed_Mario\testgame.application
+C:\Users\pafleischer\Documents\Projekte\C#_uebung\Scuffed_Mario\testgame\testgame\obj\x64\Scuffed_Mario\testgame.exe
