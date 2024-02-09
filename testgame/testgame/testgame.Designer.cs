@@ -35,6 +35,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.timer4 = new System.Windows.Forms.Timer(this.components);
             this.timer5 = new System.Windows.Forms.Timer(this.components);
+            this.heart5 = new System.Windows.Forms.PictureBox();
+            this.heart4 = new System.Windows.Forms.PictureBox();
+            this.heart3 = new System.Windows.Forms.PictureBox();
+            this.heart2 = new System.Windows.Forms.PictureBox();
+            this.heart1 = new System.Windows.Forms.PictureBox();
+            this.danger3 = new System.Windows.Forms.PictureBox();
             this.danger2 = new System.Windows.Forms.PictureBox();
             this.danger1 = new System.Windows.Forms.PictureBox();
             this.coin1 = new System.Windows.Forms.PictureBox();
@@ -42,6 +48,13 @@
             this.scuffed_mario = new System.Windows.Forms.PictureBox();
             this.floor = new System.Windows.Forms.PictureBox();
             this.skybox = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.heart5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heart4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heart3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danger3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.danger2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.danger1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coin1)).BeginInit();
@@ -81,11 +94,71 @@
             // 
             this.timer5.Tick += new System.EventHandler(this.timer5_Tick);
             // 
+            // heart5
+            // 
+            this.heart5.Image = global::testgame.Properties.Resources.bootleg_heart_full;
+            this.heart5.Location = new System.Drawing.Point(176, 12);
+            this.heart5.Name = "heart5";
+            this.heart5.Size = new System.Drawing.Size(35, 35);
+            this.heart5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.heart5.TabIndex = 15;
+            this.heart5.TabStop = false;
+            // 
+            // heart4
+            // 
+            this.heart4.Image = global::testgame.Properties.Resources.bootleg_heart_full;
+            this.heart4.Location = new System.Drawing.Point(135, 12);
+            this.heart4.Name = "heart4";
+            this.heart4.Size = new System.Drawing.Size(35, 35);
+            this.heart4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.heart4.TabIndex = 14;
+            this.heart4.TabStop = false;
+            // 
+            // heart3
+            // 
+            this.heart3.Image = global::testgame.Properties.Resources.bootleg_heart_full;
+            this.heart3.Location = new System.Drawing.Point(94, 12);
+            this.heart3.Name = "heart3";
+            this.heart3.Size = new System.Drawing.Size(35, 35);
+            this.heart3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.heart3.TabIndex = 13;
+            this.heart3.TabStop = false;
+            // 
+            // heart2
+            // 
+            this.heart2.Image = global::testgame.Properties.Resources.bootleg_heart_full;
+            this.heart2.Location = new System.Drawing.Point(53, 12);
+            this.heart2.Name = "heart2";
+            this.heart2.Size = new System.Drawing.Size(35, 35);
+            this.heart2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.heart2.TabIndex = 12;
+            this.heart2.TabStop = false;
+            // 
+            // heart1
+            // 
+            this.heart1.Image = global::testgame.Properties.Resources.bootleg_heart_full;
+            this.heart1.Location = new System.Drawing.Point(12, 12);
+            this.heart1.Name = "heart1";
+            this.heart1.Size = new System.Drawing.Size(35, 35);
+            this.heart1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.heart1.TabIndex = 11;
+            this.heart1.TabStop = false;
+            // 
+            // danger3
+            // 
+            this.danger3.Image = global::testgame.Properties.Resources.bootleg_spiketrap;
+            this.danger3.Location = new System.Drawing.Point(758, 311);
+            this.danger3.Name = "danger3";
+            this.danger3.Size = new System.Drawing.Size(113, 48);
+            this.danger3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.danger3.TabIndex = 10;
+            this.danger3.TabStop = false;
+            // 
             // danger2
             // 
             this.danger2.BackColor = System.Drawing.Color.Transparent;
             this.danger2.Image = global::testgame.Properties.Resources.bootleg_ufo;
-            this.danger2.Location = new System.Drawing.Point(758, 192);
+            this.danger2.Location = new System.Drawing.Point(115, 210);
             this.danger2.Name = "danger2";
             this.danger2.Size = new System.Drawing.Size(100, 50);
             this.danger2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -96,7 +169,7 @@
             // 
             this.danger1.BackColor = System.Drawing.Color.Transparent;
             this.danger1.Image = global::testgame.Properties.Resources.bootleg_radioactive;
-            this.danger1.Location = new System.Drawing.Point(514, 287);
+            this.danger1.Location = new System.Drawing.Point(454, 287);
             this.danger1.Name = "danger1";
             this.danger1.Size = new System.Drawing.Size(102, 72);
             this.danger1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -155,11 +228,30 @@
             this.skybox.TabIndex = 4;
             this.skybox.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(273, 180);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(249, 67);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "You Loose";
+            this.label2.Visible = false;
+            // 
             // testgame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.heart5);
+            this.Controls.Add(this.heart4);
+            this.Controls.Add(this.heart3);
+            this.Controls.Add(this.heart2);
+            this.Controls.Add(this.heart1);
+            this.Controls.Add(this.danger3);
             this.Controls.Add(this.danger2);
             this.Controls.Add(this.danger1);
             this.Controls.Add(this.coin1);
@@ -175,6 +267,12 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            ((System.ComponentModel.ISupportInitialize)(this.heart5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heart4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heart3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danger3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.danger2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.danger1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.coin1)).EndInit();
@@ -201,6 +299,13 @@
         private System.Windows.Forms.Timer timer5;
         private System.Windows.Forms.PictureBox danger1;
         private System.Windows.Forms.PictureBox danger2;
+        private System.Windows.Forms.PictureBox danger3;
+        private System.Windows.Forms.PictureBox heart1;
+        private System.Windows.Forms.PictureBox heart2;
+        private System.Windows.Forms.PictureBox heart3;
+        private System.Windows.Forms.PictureBox heart4;
+        private System.Windows.Forms.PictureBox heart5;
+        private System.Windows.Forms.Label label2;
     }
 }
 

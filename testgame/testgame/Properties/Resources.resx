@@ -127,6 +127,9 @@
   <data name="grass2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grass2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bootleg_heart_empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bootleg_heart_empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bootleg_radioactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bootleg_radioactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,25 +142,34 @@
   <data name="scuffed_mario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\scuffed_mario1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bootleg_brick2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bootleg_brick2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="grass3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grass3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bootleg_grass2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bootleg_grass2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bootleg_brick2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bootleg_brick2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="grassflowers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grassflowers.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bootleg_ufo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bootleg_ufo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="grass3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\grass3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bootleg_coin1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bootleg_coin1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bootleg_heart_full" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bootleg_heart_full.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="grass1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grass1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="grassflowers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\grassflowers.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bootleg_spiketrap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bootleg_spiketrap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rickroll-roll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rickroll-roll.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

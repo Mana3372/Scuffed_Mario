@@ -195,5 +195,17 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bootleg_spiketrap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bootleg_heart_full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bootleg_heart_empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rickroll-roll.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

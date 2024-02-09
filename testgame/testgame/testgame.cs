@@ -17,7 +17,6 @@ namespace testgame
     public partial class testgame : Form
     {
         const int jumpmax = 15;
-        const int distancetravmax = 10;
         int jumpdist = 0;
         int jumpreturn = 15;
         int health = 5;
@@ -40,8 +39,11 @@ namespace testgame
             skybox.Controls.Add(scuffed_mario);
             skybox.Controls.Add(coin1);
             skybox.Controls.Add(coin2);
+            skybox.Controls.Add(label1);
+            skybox.Controls.Add(label2);
             skybox.Controls.Add(danger1);
             skybox.Controls.Add(danger2);
+            skybox.Controls.Add(danger3);
             /*skybox.Controls.Add(block1);
             skybox.Controls.Add(block2);
             skybox.Controls.Add(block3);*/
@@ -51,9 +53,22 @@ namespace testgame
             coin2.BackColor = Color.Transparent;
             coin1.BackColor = Color.Transparent;
             label1.BackColor = Color.Transparent;
+            label2.BackColor = Color.Transparent;
             danger1.BackColor = Color.Transparent;
             danger2.BackColor = Color.Transparent;
+            danger3.BackColor = Color.Transparent;
             this.Focus(); //deprecated
+
+            //apply difficulty settings on load
+            if (MarioGameMenu.difficulty == 0)
+            {
+                danger2.Location = new Point(1000, 1000);
+                danger3.Location = new Point(1000, 1000);
+            }
+            if (MarioGameMenu.difficulty == 0 || MarioGameMenu.difficulty == 1)
+            {
+                danger3.Location = new Point(1000, 1000);
+            }
         }
 
         //jumping on Spacebar
@@ -98,6 +113,7 @@ namespace testgame
             coin1.Left += -15;
             danger1.Left += -15;
             danger2.Left += -15;
+            danger3.Left += -15;
             /*block1.Left += -15;
             block2.Left += -15;
             block3.Left += -15;*/
@@ -110,6 +126,10 @@ namespace testgame
                 DangerPos(danger1);
             if (danger2.Left <= -15)
                 DangerPos(danger2);
+            if (danger3.Left <= -15)
+                DangerPos2(danger3);
+            if (danger3.Left <= -15)
+                DangerPos3(danger3);
             //move floor to simulate walking
             if (floor.Left <= -1)
                 floor.Left = -4;
@@ -132,15 +152,11 @@ namespace testgame
             }
             //collision dangers
             if (DoesIntersect(scuffed_mario, danger1) == true)
-            {
-                TakeDamage();
-            }
+                TakeDamage(danger1);
             if (DoesIntersect(scuffed_mario, danger2) == true)
-            {
-                TakeDamage();
-            }
-
-
+                TakeDamage(danger2);
+            if (DoesIntersect(scuffed_mario, danger3) == true)
+                TakeDamage(danger3);
             //collision block
             /*if (DoesIntersect(scuffed_mario, block1) == true)
             {
@@ -154,7 +170,6 @@ namespace testgame
             {
                 BlockCollision(scuffed_mario, block3);
             }*/
-
             //collision accidental trap
             /*if (DoesIntersect(scuffed_mario, block1) == true)
             {
@@ -219,7 +234,22 @@ namespace testgame
             Random rnd = new Random();
             int rndX = rnd.Next(400, 900);
             danger.Left = rndX;
-        }
+        } //nuclear trash trap
+
+        void DangerPos2(Control danger)
+        {
+            Random rnd = new Random();
+            int rndX = rnd.Next(400, 900);
+            danger.Left = rndX;
+        } //ufo trap
+
+        void DangerPos3(Control danger)
+        {
+            Random rnd = new Random();
+            int rndX = rnd.Next(400, 2000);
+            danger.Left = rndX;
+        } //spike trap
+
         //Collisioncheck for Blocks with player
         /*void BlockCollision(Control chara, Control block)
         {
@@ -230,12 +260,62 @@ namespace testgame
         }*/
 
         //collision with dangers
-        void TakeDamage()
+        void TakeDamage(Control danger)
         {
             health--;
-            if (health == 0)
+            if (health == 4)
             {
-                this.Close();
+                heart5.Visible = false;
+                if (danger == danger1)
+                    DangerPos(danger);
+                if (danger == danger2)
+                    DangerPos2(danger);
+                if (danger == danger3)
+                    DangerPos3(danger);
+            }
+            else if (health == 3)
+            {
+                heart4.Visible = false;
+                if (danger == danger1)
+                    DangerPos(danger);
+                if (danger == danger2)
+                    DangerPos2(danger);
+                if (danger == danger3)
+                    DangerPos3(danger);
+            }
+            else if (health == 2)
+            {
+                heart3.Visible = false;
+                if (danger == danger1)
+                    DangerPos(danger);
+                if (danger == danger2)
+                    DangerPos2(danger);
+                if (danger == danger3)
+                    DangerPos3(danger);
+            }
+            else if (health == 1)
+            {
+                heart2.Visible = false;
+                if (danger == danger1)
+                    DangerPos(danger);
+                if (danger == danger2)
+                    DangerPos2(danger);
+                if (danger == danger3)
+                    DangerPos3(danger);
+            }
+            else if (health == 0)
+            {
+                heart1.Visible = false;
+                floor.Visible = false;
+                scuffed_mario.Visible = false;
+                coin2.Visible = false;
+                coin1.Visible = false;
+                label1.Visible = false;
+                danger1.Visible = false;
+                danger2.Visible = false;
+                danger3.Visible = false;
+                skybox.Image = global::testgame.Properties.Resources.rickroll_roll;
+                label2.Visible = true;
             }
         }
 

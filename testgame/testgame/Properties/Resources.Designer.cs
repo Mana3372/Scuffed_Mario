@@ -103,6 +103,26 @@ namespace testgame.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bootleg_heart_empty {
+            get {
+                object obj = ResourceManager.GetObject("bootleg_heart_empty", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bootleg_heart_full {
+            get {
+                object obj = ResourceManager.GetObject("bootleg_heart_full", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bootleg_nightsky {
             get {
                 object obj = ResourceManager.GetObject("bootleg_nightsky", resourceCulture);
@@ -116,6 +136,16 @@ namespace testgame.Properties {
         internal static System.Drawing.Bitmap bootleg_radioactive {
             get {
                 object obj = ResourceManager.GetObject("bootleg_radioactive", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bootleg_spiketrap {
+            get {
+                object obj = ResourceManager.GetObject("bootleg_spiketrap", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +216,16 @@ namespace testgame.Properties {
         internal static System.Drawing.Bitmap grassproject {
             get {
                 object obj = ResourceManager.GetObject("grassproject", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rickroll_roll {
+            get {
+                object obj = ResourceManager.GetObject("rickroll-roll", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
