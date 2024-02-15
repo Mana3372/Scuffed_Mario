@@ -90,10 +90,6 @@
             // 
             this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
             // 
-            // timer5
-            // 
-            this.timer5.Tick += new System.EventHandler(this.timer5_Tick);
-            // 
             // heart5
             // 
             this.heart5.Image = global::testgame.Properties.Resources.bootleg_heart_full;
@@ -169,9 +165,9 @@
             // 
             this.danger1.BackColor = System.Drawing.Color.Transparent;
             this.danger1.Image = global::testgame.Properties.Resources.bootleg_radioactive;
-            this.danger1.Location = new System.Drawing.Point(454, 287);
+            this.danger1.Location = new System.Drawing.Point(480, 287);
             this.danger1.Name = "danger1";
-            this.danger1.Size = new System.Drawing.Size(102, 72);
+            this.danger1.Size = new System.Drawing.Size(76, 72);
             this.danger1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.danger1.TabIndex = 8;
             this.danger1.TabStop = false;

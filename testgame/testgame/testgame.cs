@@ -44,9 +44,6 @@ namespace testgame
             skybox.Controls.Add(danger1);
             skybox.Controls.Add(danger2);
             skybox.Controls.Add(danger3);
-            /*skybox.Controls.Add(block1);
-            skybox.Controls.Add(block2);
-            skybox.Controls.Add(block3);*/
             //make items transparent around image
             floor.BackColor = Color.Transparent;
             scuffed_mario.BackColor = Color.Transparent;
@@ -64,11 +61,11 @@ namespace testgame
             {
                 danger2.Location = new Point(1000, 1000);
                 danger3.Location = new Point(1000, 1000);
-            }
+            } //remove danger2 and danger 3 for 0
             if (MarioGameMenu.difficulty == 0 || MarioGameMenu.difficulty == 1)
             {
                 danger3.Location = new Point(1000, 1000);
-            }
+            } //remove danger3 for 0 and 1
         }
 
         //jumping on Spacebar
@@ -114,9 +111,6 @@ namespace testgame
             danger1.Left += -15;
             danger2.Left += -15;
             danger3.Left += -15;
-            /*block1.Left += -15;
-            block2.Left += -15;
-            block3.Left += -15;*/
             //move coins and dangers once they reach past X = 0
             if (coin1.Left <= -15)
                 Coins(coin1);
@@ -157,44 +151,6 @@ namespace testgame
                 TakeDamage(danger2);
             if (DoesIntersect(scuffed_mario, danger3) == true)
                 TakeDamage(danger3);
-            //collision block
-            /*if (DoesIntersect(scuffed_mario, block1) == true)
-            {
-                BlockCollision(scuffed_mario, block1);
-            }
-            if (DoesIntersect(scuffed_mario, block2) == true)
-            {
-                BlockCollision(scuffed_mario, block2);
-            }
-            if (DoesIntersect(scuffed_mario, block3) == true)
-            {
-                BlockCollision(scuffed_mario, block3);
-            }*/
-            //collision accidental trap
-            /*if (DoesIntersect(scuffed_mario, block1) == true)
-            {
-                TrapCollision(scuffed_mario, block1);
-            }*/
-        }
-
-        //traveling backwards on A
-        void timer5_Tick(object sender, EventArgs e)
-        {
-            timer3.Interval = 40;
-            floor.Left += +15;
-            coin2.Left += +15;
-            coin1.Left += +15;
-            /*block1.Left += +15;
-            block2.Left += +15;
-            block3.Left += +15;*/
-            //move coins once they reach past X = 0
-            if (coin1.Left <= +15)
-                Coins(coin1);
-            if (coin2.Left <= +15)
-                Coins(coin2);
-            //move floor to simulate walking
-            if (floor.Left != -1)
-                floor.Left = +4;
         }
 
         //collision control
@@ -204,18 +160,10 @@ namespace testgame
                     Math.Min(c1.Bounds.Bottom, c2.Bounds.Bottom) >= Math.Max(c1.Bounds.Top, c2.Bounds.Top));
         }
 
-        //score counter update form1
-        /*private void OnScoreUpdate(object sender, int score)
-        {
-            label1.Text = $"Score: {MarioGameMenu.scorept}";
-        }*/
-
         public void Score()
         {
             MarioGameMenu.scorept++;
             label1.Text = $"Score: {MarioGameMenu.scorept}";
-            //MarioGameMenu.IntegerUpdated += OnScoreUpdate;
-            //( as MarioGameMenu).IntegerUpdated.Invoke(this, MarioGameMenu.scorept);
         }
 
         //Coins position and in future avoid collision with Blocks
@@ -249,15 +197,6 @@ namespace testgame
             int rndX = rnd.Next(400, 2000);
             danger.Left = rndX;
         } //spike trap
-
-        //Collisioncheck for Blocks with player
-        /*void BlockCollision(Control chara, Control block)
-        {
-            if (chara.Bounds.IntersectsWith(block.Bounds) && chara.Bounds.Bottom >= block.Bounds.Bottom)
-            {
-                chara.Location = new Point(chara.Location.X, block.Bounds.Top - 82);
-            }
-        }*/
 
         //collision with dangers
         void TakeDamage(Control danger)
@@ -319,15 +258,6 @@ namespace testgame
             }
         }
 
-        //lol
-        void TrapCollision(Control chara, Control trap)
-        {
-            if (chara.Bottom != trap.Top)
-            {
-                chara.Location = new Point(trap.Location.X, trap.Location.Y);
-            }
-        }
-
         //keyinputs
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -343,11 +273,6 @@ namespace testgame
             {
                 timer3.Dispose();
             }
-            //stop walking backwards
-            if (e.KeyCode == Keys.A)
-            {
-                timer5.Dispose();
-            }
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -356,12 +281,6 @@ namespace testgame
             if (e.KeyCode == Keys.D)
             {
                 timer3.Start();
-                timer4.Start();
-            }
-            //walk backwards
-            if (e.KeyCode == Keys.A)
-            {
-                timer5.Start();
                 timer4.Start();
             }
         }
